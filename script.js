@@ -5,7 +5,7 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.size(windowWidth, windowHeight);
   capture.hide();
-    frameRate(20);
+    frameRate(29);
   noStroke();
   
     
@@ -14,10 +14,10 @@ function setup() {
 function draw() {
   background(255);
   
-  fill( random(255), random(255), random(255));    
+  fill(random(255), random(255), random(255));    
     
     capture.loadPixels();
-  	var stepSize = round(constrain(mouseY / 6, 8, 32));
+  	var stepSize = round(constrain(mouseY / 8, 12, 28));
   	for (var y=0; y<height; y+=stepSize) {
     for (var x=0; x<width; x+=stepSize) {
       var i = y * width + x;
