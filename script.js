@@ -17,7 +17,7 @@ function draw() {
   fill(random(255), random(255), random(255));    
     
     capture.loadPixels();
-  	var stepSize = round(constrain(mouseY / 8, 12, 28));
+  	var stepSize = round(constrain(mouseY / 4, 10, 28));
   	for (var y=0; y<height; y+=stepSize) {
     for (var x=0; x<width; x+=stepSize) {
       var i = y * width + x;
