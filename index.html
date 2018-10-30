@@ -4,24 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
   <title>P5 Rave</title>
 </head>
 <body>
-    <div id="splashScreen">
-        <h1>Game Title</h1>
-        <input id="startButton" type="button" value="Start"/>
+    <section id="splashScreen">
+        <div class="text-effect">
+        <h1 class="neon" data-text="RAVE" contenteditable>RAVE</h1>
+        <div class="gradient"></div>
+        <div class="spotlight"></div>
+      </div>
+        <h2>Warning Flashing Lights</h2>
+        <div class="buttonContainer">
+          <input id="startButton" type="button" value="Start the Party"/>
         </div>
-        
-        <canvas id="defaultCanvas0" style="display: none;">Game Stuff</canvas>
-        
-        <script>
-            $("#startButton").click(function () {
-                $("#splashScreen").hide();
-                $("#defaultCanvas0").show();
-            });
-        </script>
-	<script src="script.js"></script>
+      
+      </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>      
 	<script src="libs/p5.js"></script>
-  	<script src="libs/p5.dom.js"></script>
+  <script src="libs/p5.dom.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
