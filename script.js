@@ -1,11 +1,3 @@
-$("#defaultCanvas0").hide();
-
-$("#startButton").click(
-  function () {
-  $("#splashScreen").hide();
-  $("#defaultCanvas0").show();
-});
-
 var capture;
 
 function setup() {
@@ -13,12 +5,15 @@ function setup() {
   capture = createCapture(VIDEO);
   capture.size(windowWidth, windowHeight);
   capture.hide();
-    frameRate(26);
-  noStroke(); 
+    frameRate(29);
+  noStroke();
+  
+    
 }
 
 function draw() {
-  background(0);
+  background(255);
+  
   fill(random(255), random(255), random(255));    
     
     capture.loadPixels();
